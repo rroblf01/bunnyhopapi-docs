@@ -1,4 +1,8 @@
-<!-- docs/_sidebar.md -->
 * [Inicio](/es/)
 - Comenzando
     - [Inicio rápido](/es/quickstart.md)
+    - [Cómo empezar](/es/how_to_start.md)
+    - [Router](/es/router.md)
+    - [Middleware](/es/middleware.md)
+    - [SSE](/es/sse.md)
+    - [Websocket](/es/websocket.md)

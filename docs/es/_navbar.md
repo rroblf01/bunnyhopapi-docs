@@ -1,0 +1,4 @@
+- Traducciones
+
+  - [English](/)
+  - [Español](/es/)
