@@ -52,7 +52,7 @@ En este ejemplo hemos añadido una authentication middleware a nivel de router y
 class UserEndpoint(Endpoint):
     path: str = "/users"
 
-    @Endpoint.MIDDLEWARE()
+    @Endpoint.MIDDLEWARE
     def db_middleware(self, endpoint, headers, *args, **kwargs):
         logger.info("db_middleware: Before to call the endpoint")
         db = Database()
