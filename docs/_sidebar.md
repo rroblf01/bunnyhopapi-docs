@@ -5,3 +5,4 @@
     - [Middleware](middleware.md)
     - [SSE](sse.md)
     - [Websocket](websocket.md)
+    - [Benchmark](benchmark.md)

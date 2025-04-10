@@ -7,6 +7,9 @@ To implement WebSocket in BunnyHopAPI, you need to create a method called `ws` i
 ```python
 from bunnyhopapi.server import Server
 from bunnyhopapi.models import Endpoint
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class WSEndpoint(Endpoint):
