@@ -5,4 +5,5 @@
     - [Middleware](middleware.md)
     - [SSE](sse.md)
     - [Websocket](websocket.md)
+    - [Templates](templates.md)
     - [Benchmark](benchmark.md)
