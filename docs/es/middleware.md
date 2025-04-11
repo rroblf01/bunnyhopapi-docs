@@ -8,7 +8,7 @@ Los middleware siempre reciben 2 parámetros obligatorios:
 Y siempre se ejecuta desde el más general al más específico, y permite tener varios middlewares al mismo tiempo.
 
 ## Middleware a nivel de servidor
-``python
+```python
 from bunnyhopapi.server import Server
 
 def auth_middleware(headers, endpoint, *args, **kwargs):
@@ -26,7 +26,7 @@ if __name__ == "__main__":
 En este ejemplo hemos añadido una authentication middleware a nivel de servidor. Si no se encuentra el header `Authorization`, se devuelve un error 401. Si se encuentra, se llama al endpoint.
 
 ## Middleware a nivel de router
-``python
+```python
 from bunnyhopapi.server import Server, Router
 
 
@@ -47,7 +47,7 @@ if __name__ == "__main__":
 En este ejemplo hemos añadido una authentication middleware a nivel de router y solo afecta a los routers y endpoints que se añadan a este router.
 
 ## Middleware a nivel de clase Endpoint
-``python
+```python
 
 class UserEndpoint(Endpoint):
     path: str = "/users"
@@ -66,7 +66,7 @@ class UserEndpoint(Endpoint):
 En este ejemplo hemos añadido una middleware a nivel de clase Endpoint. Esta middleware se ejecuta antes de llamar al endpoint y se le pasa el endpoint, los headers y el resto de parámetros. En este caso, se crea una conexión a la base de datos y se pasa al endpoint.
 
 ## Middleware a nivel de endpoint
-``python
+```python
 
 
 def db_middleware(endpoint, headers, *args, **kwargs):
