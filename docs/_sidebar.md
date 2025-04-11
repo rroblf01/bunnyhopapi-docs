@@ -1,3 +1,4 @@
+* [Start](/)
 - Getting started
     - [Quick start](quickstart.md)
     - [How to start](how_to_start.md)
