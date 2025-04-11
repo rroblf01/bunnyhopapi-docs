@@ -6,6 +6,8 @@ Thank you for your interest in **BunnyHopApi**, a lightweight and fast web frame
 
 ### Key Features
 
+- **Async/Sync Request Support**: Handles both asynchronous and synchronous functions, allowing for flexible and efficient development.
+
 - **Full Support for HTTP, SSE, and WebSockets**: Easily handle all HTTP requests, server-sent events (SSE), and real-time bidirectional communication with WebSockets.
 
 - **Flexible Middlewares**: Implement middlewares at the global, route, or endpoint level to customize your application’s behavior.

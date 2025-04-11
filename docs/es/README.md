@@ -6,6 +6,8 @@ Gracias por tu interés en **BunnyHopApi**, un framework web ligero y rápido di
 
 ### Características Clave
 
+- **Soporte para peticiones Async/Sync**: Maneja tanto funciones asíncronas como síncronas, permitiendo un desarrollo flexible y eficiente.
+
 - **Soporte Completo para HTTP, SSE y WebSockets**: Maneja fácilmente todas las solicitudes HTTP, eventos enviados por el servidor (SSE) y comunicación bidireccional en tiempo real con WebSockets.
 
 - **Middlewares Flexibles**: Implementa middlewares a nivel global, de ruta o de endpoint para personalizar el comportamiento de tu aplicación.
