@@ -16,6 +16,8 @@ Gracias por tu interés en **BunnyHopApi**, un framework web ligero y rápido di
 
 - **Renderizado de Páginas Web**: Soporta tanto páginas estáticas como dinámicas utilizando Jinja2.
 
+- **Validación Automática de Tipos**: Valida automáticamente los tipos de datos de las solicitudes, asegurando que los datos recibidos sean del tipo esperado.
+
 - **Documentación Swagger Automática**: Genera automáticamente documentación Swagger para todos tus endpoints, facilitando la exploración y prueba de tu API.
 
 - **Rendimiento Excepcional**: Diseñado para ser rápido y eficiente, optimizando el rendimiento de tu aplicación.

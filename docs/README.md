@@ -16,6 +16,8 @@ Thank you for your interest in **BunnyHopApi**, a lightweight and fast web frame
 
 - **Web Page Rendering**: Supports both static and dynamic pages using Jinja2.
 
+- **Automatic Type Validation**: Automatically validates data types in requests, ensuring that received data is of the expected type.
+
 - **Automatic Swagger Documentation**: Automatically generates Swagger documentation for all your endpoints, making it easy to explore and test your API.
 
 - **Exceptional Performance**: Designed to be fast and efficient, optimizing your application’s performance.
