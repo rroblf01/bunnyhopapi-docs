@@ -46,7 +46,7 @@ if __name__ == "__main__":
 ```
 
 ## Crear Endpoints
-Para crear un endpoint, debes definir una clase que herede de `Endpoint` y definir los métodos correspondientes para manejar las solicitudes HTTP. Aquí hay un ejemplo básico:
+Para crear un endpoint, debes definir una clase que herede de `Endpoint` y definir los métodos con los middlewares correspondientes para manejar las solicitudes HTTP. Aquí hay un ejemplo básico:
 
 ```python
 from bunnyhopapi.models import Endpoint

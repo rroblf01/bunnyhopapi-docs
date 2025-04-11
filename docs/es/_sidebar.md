@@ -7,5 +7,6 @@
     - [SSE](/es/sse.md)
     - [Websocket](/es/websocket.md)
     - [Templates](/es/templates.md)
+    - [Ejemplos](examples.md)
     - [Benchmark](/es/benchmark.md)
     - [Código fuente](/es/source.md)
