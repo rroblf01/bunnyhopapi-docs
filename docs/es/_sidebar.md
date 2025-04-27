@@ -4,6 +4,7 @@
     - [Cómo empezar](/es/how_to_start.md)
     - [Router](/es/router.md)
     - [Middleware](/es/middleware.md)
+    - [Recarga Automática](/es/auto_reload.md)
     - [SSE](/es/sse.md)
     - [Websocket](/es/websocket.md)
     - [Templates](/es/templates.md)
