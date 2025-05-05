@@ -46,6 +46,7 @@ if __name__ == "__main__":
 ```
 
 ## Crear Endpoints
+### Modo clases
 Para crear un endpoint, debes definir una clase que herede de `Endpoint` y definir los métodos con los middlewares correspondientes para manejar las solicitudes HTTP. Aquí hay un ejemplo básico:
 
 ```python
@@ -82,11 +83,60 @@ if __name__ == "__main__":
 ```
 En este ejemplo, hemos creado un endpoint `/health` que responde a las solicitudes GET, POST, PUT, PATCH y DELETE con un mensaje JSON.
 
+### Modo funciones
+
+También puedes crear endpoints utilizando funciones en lugar de clases. Aquí hay un ejemplo básico:
+
+```python
+from bunnyhopapi.server import Server
+
+server = Server()
+
+@server.get('/health')
+def get(headers):
+    return 200, {"message": "GET /health"}
+
+@server.post('/health')
+def post(headers):
+    return 200, {"message": "POST /health"}
+
+@server.put('/health')
+def put(headers):
+    return 200, {"message": "PUT /health"}
+
+@server.patch('/health')
+def patch(headers):
+    return 200, {"message": "PATCH /health"}
+
+@server.delete('/health')
+def delete(headers):
+    return 200, {"message": "DELETE /health"}
+
+if __name__ == "__main__":
+    server.run()
+```
+En este ejemplo, hemos creado un endpoint `/health` que responde a las solicitudes GET, POST, PUT, PATCH y DELETE con un mensaje JSON.
+
 ## Variables de parámetro y Query
 
 Para definir variables de parámetro es necesario que la variable que en el método que definas se tipe como PathParam, y para definir variables de query es necesario que la variable que en el método que definas se tipe como QueryParam. Aquí hay un ejemplo básico:
 
+### Modo funciones
+```python
+from bunnyhopapi.models import PathParam, QueryParam
+from bunnyhopapi.server import Server
 
+server = Server()
+
+@server.get("/user/<user_id>")
+def get(user_id: PathParam[int], age: QueryParam[int], headers):
+    return 200, {"message": f"GET /user/{user_id}?age={age}"}
+
+if __name__ == "__main__":
+    server.run()
+```
+
+### Modo clases
 ```python
 from bunnyhopapi.models import Endpoint, PathParam, QueryParam
 from bunnyhopapi.server import Server

@@ -63,6 +63,19 @@ class UserEndpoint(Endpoint):
         users = db.get_users()
         return 200, {"users": users}
 ```
+
+```python
+def db_middleware(endpoint, headers, *args, **kwargs):
+        logger.info("db_middleware: Before to call the endpoint")
+        db = Database()
+        return endpoint(headers=headers, db=db, *args, **kwargs)
+
+
+@router.get("/users", middleware=db_middleware)
+def get_with_middleware(headers, db: Database, *args, **kwargs) -> {200: UserList}:
+        users = db.get_users()
+        return 200, {"users": users}
+```
 En este ejemplo hemos añadido una middleware a nivel de clase Endpoint. Esta middleware se ejecuta antes de llamar al endpoint y se le pasa el endpoint, los headers y el resto de parámetros. En este caso, se crea una conexión a la base de datos y se pasa al endpoint.
 
 ## Middleware a nivel de endpoint
